@@ -1,17 +1,16 @@
-package com.bilgeadam.annotation.qualifier;
+package com.bilgeadam.iocconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
-public class GameRunnerQualifier {
 
-  /*  @Autowired
-    @Qualifier("pacman")*/
-    IRunableQualifier game;
+public class GameRunner {
+
+//    @Autowired
+    IRunable game;
+
     // cons. injection
-    public GameRunnerQualifier( @Qualifier("mario") IRunableQualifier game) {
+    public GameRunner(IRunable game) {
         this.game = game;
     }
 

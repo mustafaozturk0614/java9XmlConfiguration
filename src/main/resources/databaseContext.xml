@@ -9,6 +9,7 @@
     <!-- application proportiesden veci çekmek için kullandığımız tag  -->
     <context:property-placeholder location="application.properties" ></context:property-placeholder>
 
+
     <!-- kendi elimizle degerleri tanımlagımız yer -->
     <bean id="database" class="com.bilgeadam.xml.database.PostgreSql" >
         <property name="username" value="postgres"></property>
